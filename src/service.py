@@ -2,16 +2,19 @@ from pathlib import Path
 from typing import List
 from openai import OpenAI
 from .models import Client
-from .utils import load_json, write_csv
+from .utils import load_json, write_json, write_csv
 
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-def load_clients(path) -> List[Client]: # make sure we reutnr an array with objects that respect Client variables
+def load_clients(path: str | Path) -> List[Client]: # make sure we reutnr an array with objects that respect Client variables
     data = load_json(path)
     return [Client(**item) for item in data] # create an array of object with data
+
+def add_client(path: str | Path, client: Client):
+    write_json(path, client)
 
 def filter_by_country(clients, country) -> List[Client]:
     return [client for client in clients if client.country.lower() == country.lower()] # that syntax is something but at least its compact

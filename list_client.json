@@ -33,12 +33,5 @@
         "email": "emma.muller@example.com",
         "country": "Allemagne",
         "notes": "Intéressée par une offre groupée."
-    },
-    {
-        "id": 6,
-        "name": "Thomas Albert",
-        "email": "thomas.test@test.test",
-        "country": "France",
-        "notes": "test"
     }
 ]

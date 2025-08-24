@@ -19,6 +19,17 @@ def write_json(path: str | Path, client: Client):
     with open(path, 'w', encoding = 'utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent = 4)
 
+# delete a client in a json
+
+def delete_json(path: str | Path, id: int):
+    with open(path, 'r', encoding = 'utf-8') as f:
+        data = json.load(f)
+
+    data = [client for client in data if client.get('id') != id]
+
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
 
 # write a csv based on the json we give it
 

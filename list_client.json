@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Dupont",
+    "email": "alice.dupont@example.com",
+    "country": "France",
+    "notes": "Intéressée par une démo de produit."
+  },
+  {
+    "id": 2,
+    "name": "Bob Martin",
+    "email": "bob.martin@example.com",
+    "country": "Canada",
+    "notes": "Demande un devis personnalisé."
+  },
+  {
+    "id": 3,
+    "name": "Carla Rossi",
+    "email": "carla.rossi@example.com",
+    "country": "Italie",
+    "notes": "Client fidèle depuis 3 ans."
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "email": "david.kim@example.com",
+    "country": "Corée du Sud",
+    "notes": "Veut recevoir la documentation technique."
+  },
+  {
+    "id": 5,
+    "name": "Emma Müller",
+    "email": "emma.muller@example.com",
+    "country": "Allemagne",
+    "notes": "Intéressée par une offre groupée."
+  }
+]
